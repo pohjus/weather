@@ -8,6 +8,8 @@ require("dotenv").config();
 
 app.use(cors());
 
+app.use(express.static("public"));
+
 // https://www.youtube.com/watch?v=ZGymN8aFsv4
 
 const PORT = process.env.PORT || 8080;
